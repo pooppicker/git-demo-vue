@@ -1,9 +1,22 @@
 <template>
   <div class="out">
     <label for="account">帳號</label>
-    <input id="account" type="account" />
+    <input @click="alertTest" id="account" type="account" />
   </div>
 </template>
+
+<script>
+import Swal from 'sweetalert2'
+export default {
+  
+  methods: {
+    alertTest() {
+      Swal.fire('有成功跳出通知嗎')
+    }
+
+  },
+}
+</script>
 
 <style lang="sass" scoped>
 input:focus, textarea:focus, select:focus
