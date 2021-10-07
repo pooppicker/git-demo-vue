@@ -21,5 +21,26 @@ export default {
     }
 
   },
+  created() {
+    console.log('created')
+  },
+   mounted() {
+    console.log('mounted')
+  },
+
+  beforeUpdate() {
+    console.log('beforUpdated')
+  },
+
+  updated() {
+    console.log('updated')
+
+  },
+
+  beforeDestroy() {
+    console.log('beforeDestroy')
+
+  },
+
 }
 </script>
